@@ -6,14 +6,10 @@ interface Props {
   onAddTask: (title: string) => void;
 }
 
-export default function AddTaskForm({
-  onAddTask,
-}: Props) {
+export default function AddTaskForm({ onAddTask }: Props) {
   const [title, setTitle] = useState("");
 
-  const handleSubmit = (
-    e: React.FormEvent
-  ) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!title.trim()) return;
@@ -26,26 +22,22 @@ export default function AddTaskForm({
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-white rounded-xl shadow p-5 mb-6"
+      className="mb-6 rounded-3xl border border-zinc-200 bg-white/80 p-6 backdrop-blur-sm"
     >
-      <h3 className="font-semibold text-slate-800 mb-4">
-        Add New Task
-      </h3>
+      <h3 className="mb-4 font-semibold text-slate-800">Add New Task</h3>
 
       <div className="flex gap-3">
         <input
           type="text"
           placeholder="Write a task..."
           value={title}
-          onChange={(e) =>
-            setTitle(e.target.value)
-          }
-          className="flex-1 border rounded-lg p-3"
+          onChange={(e) => setTitle(e.target.value)}
+          className="flex-1 rounded-xl border border-zinc-200 bg-white p-3"
         />
 
         <button
           type="submit"
-          className="bg-blue-600 text-white px-5 rounded-lg"
+          className="rounded-lg bg-zinc-900 px-5 text-white transition hover:bg-zinc-800"
         >
           Create
         </button>

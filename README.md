@@ -4,21 +4,21 @@ A responsive task management dashboard built with Next.js, React, TypeScript, an
 
 ## Features
 
-* Task listing from external API
-* Create new tasks
-* Update task status
-* Dynamic filtering (All, Completed, Pending)
-* Responsive layout
-* Reusable React components
-* Sidebar navigation
+- Task listing from external API
+- Create new tasks
+- Update task status
+- Dynamic filtering (All, Completed, Pending)
+- Responsive layout
+- Reusable React components
+- Sidebar navigation
 
 ## Technologies
 
-* Next.js 15
-* React
-* TypeScript
-* Tailwind CSS
-* Lucide React Icons
+- Next.js 15
+- React
+- TypeScript
+- Tailwind CSS
+- Lucide React Icons
 
 ## Getting Started
 
